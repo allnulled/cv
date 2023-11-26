@@ -44,6 +44,7 @@ h5 {
     display: inline-block;
     max-width: 100%;
     width: 100%;
+    max-width: 500px;
     vertical-align: top;
 }
 .dialogo_de_gato_1 {
