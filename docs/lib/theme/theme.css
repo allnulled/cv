@@ -1,0 +1,57 @@
+@font-face {
+    font-family: RobotoCondensed;
+    src: url("../fonts/Roboto_Condensed/static/RobotoCondensed-Regular.ttf");
+}
+* {
+    font-family: RobotoCondensed;
+    font-size: 15px;
+}
+html {
+    background-color: #111;
+}
+h5 {
+    margin: 0;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    text-shadow: 0 0 1px black;
+    text-align: center;
+}
+
+@keyframes gato_entrando_por_la_derecha {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.contenedor_de_gato_1 {
+    position: relative;
+}
+.contenedor_2_de_gato_1 {
+    width: 100%;
+    animation-name: gato_entrando_por_la_derecha;
+    animation-duration: 6s;
+    position: absolute;
+    left: auto;
+    bottom: 0;
+    top: 0;
+    z-index: 8000;
+}
+.gato_1 {
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+.dialogo_de_gato_1 {
+    position: absolute;
+    z-index: 9000;
+    padding: 12px;
+    margin: 4px;
+    border: 3px double #FFF;
+    background-color: #FFF;
+    border-radius: 8pt;
+}
